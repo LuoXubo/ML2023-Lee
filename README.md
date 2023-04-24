@@ -18,6 +18,6 @@ Some codes of machine learning from HUNG-YI LEE.
 
 找出函数的三步骤
 
-- 选出候选函数额集合（Model）
-- 设定评价函数好坏的标准（Loss）
+- 选出候选函数额集合（Model: CNN, Transformer, Decision Tree, etc.）
+- 设定评价函数好坏的标准（Loss: Supervised learning, Semi-supervised learning, RL, etc.）
 - 找到最好的函数 $f^* = arg min_{f \in H} L(f)$
