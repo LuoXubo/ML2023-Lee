@@ -21,3 +21,25 @@ Some codes of machine learning from HUNG-YI LEE.
 - 选出候选函数额集合（Model: CNN, Transformer, Decision Tree, etc.）
 - 设定评价函数好坏的标准（Loss: Supervised learning, Semi-supervised learning, RL, etc.）
 - 找到最好的函数 $f^* = arg min_{f \in H} L(f)$
+
+## 卷积神经网络
+
+### Observation 1: Some patterns are much smaller than the whole image.
+
+**常见参数**
+
+- Kernel size
+- Stride
+- Padding
+
+### Observation 2: The same patterns appear in different regions.
+
+**共享参数**
+
+### Observation 3: SubSampling the pixels will not change the object
+
+- Convolution 和 Pooling 交替使用
+
+* Pooling 可能影响精度，很多模型已减少 Pooling 使用
+
+* Data augmentation 很重要
