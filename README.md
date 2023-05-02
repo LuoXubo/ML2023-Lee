@@ -2,6 +2,8 @@
 
 Some codes of machine learning from HUNG-YI LEE.
 
+Class homepage : https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php
+
 ## ChatGPT 原理剖析
 
 - **ChatGPT is not connected to the internet**. 多数 ChatGPT 的答案在网络上都找不到一模一样的句子，甚至有些是**假的**
@@ -43,3 +45,23 @@ Some codes of machine learning from HUNG-YI LEE.
 * Pooling 可能影响精度，很多模型已减少 Pooling 使用
 
 * Data augmentation 很重要
+
+**Torchvision** 提供了很多数据处理的函数，如：
+
+```
+test_tfm = transforms.Compose([
+    transforms.Resize((128, 128)),
+    transforms.ToTensor(),
+])
+
+# However, it is also possible to use augmentation in the testing phase.
+# You may use train_tfm to produce a variety of images and then test using ensemble methods
+train_tfm = transforms.Compose([
+    # Resize the image into a fixed shape (height = width = 128)
+    transforms.Resize((128, 128)),
+    # You may add some transforms here.
+
+    # ToTensor() should be the last one of the transforms.
+    transforms.ToTensor(),
+])
+```
