@@ -65,3 +65,11 @@ train_tfm = transforms.Compose([
     transforms.ToTensor(),
 ])
 ```
+
+## 自注意力机制
+
+![](./Fig/selfattention.png)
+
+![](./Fig/msa.png)
+
+![](./Fig/pos.png)
