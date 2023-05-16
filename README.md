@@ -73,3 +73,10 @@ train_tfm = transforms.Compose([
 ![](./Fig/msa.png)
 
 ![](./Fig/pos.png)
+
+## Batch Normalization
+
+# Transformer
+
+* Sequence-to-sequence model: 输出长度由model决定
+* Encoder + Decoder
