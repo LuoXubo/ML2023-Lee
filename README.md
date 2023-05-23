@@ -76,7 +76,13 @@ train_tfm = transforms.Compose([
 
 ## Batch Normalization
 
-# Transformer
+## Transformer
 
 * Sequence-to-sequence model: 输出长度由model决定
 * Encoder + Decoder
+
+
+## Generative Adversarial Network
+* 模型的输入不仅有x, 还有simple distribution
+* 为什么GAN很难Train：Generator和Discriminator互相影响，一个变差会使另一个也变差；如果有个epoch的loss没有下降，可能会导致后续越训练越差
+* 增强输入和输出之间的联系：cycleGAN - train两个generator
